@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,5 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/note_item" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_anchor="@id/recycler_view"
+        app:layout_anchorGravity="bottom|end|right"
+        app:srcCompat="@drawable/ic_add"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
