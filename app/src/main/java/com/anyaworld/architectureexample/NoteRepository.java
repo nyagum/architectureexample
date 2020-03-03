@@ -25,11 +25,11 @@ public class NoteRepository {
         new UpdateNoteAsyncTask(noteDao).execute(note);
     }
 
-    public void DeleteNotes(Note note){
+    public void deleteNotes(Note note){
         new DeleteNoteAsyncTask(noteDao).execute(note);
     }
 
-    public void DeleteAllNotes(){
+    public void deleteAllNotes(){
         new DeleteNoteAllAsyncTask(noteDao).execute();
     }
 
